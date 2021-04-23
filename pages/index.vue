@@ -1,0 +1,71 @@
+<template>
+  <main class="fb__main">
+        <h2 class="fb__title--hidden">메인페이지</h2>
+
+        <section class="fb__main__visual">
+            <h3 class="fb__title--hidden">상단 대표이미지</h3>
+            <figure class="visual__thumb">
+                <span class="visual__logo">ELBUM</span>
+                <!-- <p class="visual__text">고객의 성공과 함께 성장합니다.</p> -->
+            </figure>
+        </section>
+
+        <section class="fb__main__we">
+            <h3 class="fb__main__title">WHO WE ARE</h3>
+            <ul class="we__detail">
+                <li class="we__detail__box">
+                    <em class="we__detail__count">21</em>
+                    <span class="we__detail__name">연차+</span>
+                </li>
+                <li class="we__detail__box">
+                    <em class="we__detail__count">21</em>
+                    <span class="we__detail__name">프로젝트+</span>
+                </li>
+                <li class="we__detail__box">
+                    <em class="we__detail__count">21</em>
+                    <span class="we__detail__name">유지관리+</span>
+                </li>
+                <li class="we__detail__box">
+                    <em class="we__detail__count">21</em>
+                    <span class="we__detail__name">고객사+</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="fb__main__menu">
+            <h3 class="fb__title--hidden">메뉴</h3>
+            <ul class="menu__wrapper">
+                <li class="menu__box">
+                    <a class="menu__name" href="#">공지사항</a>
+                </li>
+                <li class="menu__box">
+                    <a class="menu__name" href="#">이용안내</a>
+                </li>
+                <li class="menu__box">
+                    <a class="menu__name" href="#">문의제안</a>
+                </li>
+                <li class="menu__box">
+                    <a class="menu__name" href="#">요금안내</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="fb__main__company">
+            <h3 class="fb__title--hidden">회사정보</h3>
+            <ul class="company__info">
+                <li class="company__info__list">
+                    <span class="company__info__name">Tel</span>
+                    <a href="tel:02-1234-1234" class="company__info__detail">02-1234-1234</a>
+                </li>
+                <li class="company__info__list">
+                    <span class="company__info__name">Location</span>
+                    <p class="company__info__detail">서울시 사당동</p>
+                </li>
+            </ul>
+        </section>
+  </main>
+</template>
+
+<script>
+export default {}
+</script>

@@ -1,0 +1,77 @@
+.fb {
+    &__main {
+        &__visual {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: vw(600px);
+            background: #e3bc4b;
+
+            .visual {
+                &__thumb {
+
+                }
+
+                &__logo {
+
+                }
+
+                &__text {
+
+                }
+            }
+        }
+
+        &__we {
+            .we {
+                &__detail {
+                    &__box {
+
+                    }
+
+                    &__count {
+
+                    }
+
+                    &__name {
+
+                    }
+                }
+            }
+        }
+
+        &__menu {
+            .menu {
+                &__wrapper {
+
+                }
+
+                &__box {
+
+                }
+
+                &__name {
+
+                }
+            }
+        }
+
+        &__company {
+            .company {
+                &__info {
+                    &__list {
+
+                    }
+
+                    &__name {
+
+                    }
+
+                    &__detail {
+
+                    }
+                }
+            }
+        }
+    }
+}
