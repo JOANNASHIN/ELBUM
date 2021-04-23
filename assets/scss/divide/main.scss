@@ -1,40 +1,80 @@
 .fb {
     &__main {
+        &__title {
+            font-weight: bold;
+            font-size: vw(40px);
+        }
+        
         &__visual {
             display: flex;
             align-items: center;
             justify-content: center;
-            height: vw(600px);
-            background: #e3bc4b;
+            position: relative;
+            height: vw(800px);
+            background: url("../images/weather/sunny1.jpg") no-repeat 0 0 / 100% auto;
+
+            @include dim();
 
             .visual {
-                &__thumb {
-
+                &__text {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 100%;
+                    transform: translate(0, -50%);
+                    text-align: center;
+                    color: #fff;
                 }
 
                 &__logo {
-
+                    display: block;
+                    margin-bottom: vw(20px);
+                    font-family: "roboto";
+                    font-weight: bold;
+                    font-size: vw(50px);
                 }
 
-                &__text {
-
+                &__desc {
+                    font-size: vw(24px);
                 }
             }
         }
 
         &__we {
+            padding-top: vw(60px);
+            text-align: center;
+
             .we {
                 &__detail {
-                    &__box {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: vw(20px);
 
+                    &__box {
+                        flex: 0 0 50%;
+                        padding: vw(100px 0);
+
+                        &:before {
+                            display: block;
+                            width: vw(50px);
+                            height: vw(50px);
+                            background: #666;
+                            margin: 0 auto vw(20px);
+                            content: "";
+                        }
                     }
 
                     &__count {
-
+                        display: block;
+                        margin-bottom: vw(10px);
+                        font-family: "roboto";
+                        font-weight: bold;
+                        font-size: vw(30px);
                     }
 
                     &__name {
-
+                        color: #999;
+                        font-size: vw(20px);
                     }
                 }
             }
@@ -43,32 +83,73 @@
         &__menu {
             .menu {
                 &__wrapper {
-
+                    display: flex;
+                    flex-wrap: wrap;
+                    text-align: center;
                 }
 
                 &__box {
+                    display: flex;
+                    position: relative;
+                    flex: 0 0 50%;
+                    background: url("../images/weather/sunny1.jpg") no-repeat 0 0 / 100% auto;
 
+                    @include dim();
+
+                    &:after {
+                        display: block;
+                        padding-bottom: 100%;
+                        content: "";
+                    }
                 }
 
                 &__name {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    color: #fff;
+                    font-size: vw(22px);
+                    transform: translate(-50%, -50%);
 
+                    &:before {
+                        display: block;
+                        width: vw(50px);
+                        height: vw(50px);
+                        background: #fff;
+                        margin: 0 auto vw(20px);
+                        content: "";
+                    }
                 }
             }
         }
 
         &__company {
+            
             .company {
                 &__info {
                     &__list {
+                        position: relative;
+                        height: vw(300px);
+                        background: url("../images/weather/darksky.jpg") no-repeat 0 0 / 100% auto;
+                        
+                        @include dim(0.3);
+                    }
 
+                    &__wrapper {
+                        position: absolute;
+                        top: 50%;
+                        padding: vw(30px);
+                        transform: translate(0, -50%);
+                        color: #fff;
                     }
 
                     &__name {
-
+                        display: block;
+                        font-size: vw(22px);
                     }
 
                     &__detail {
-
+                        font-size: vw(40px);
                     }
                 }
             }

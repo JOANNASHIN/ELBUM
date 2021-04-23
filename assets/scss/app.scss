@@ -23,6 +23,18 @@
     margin: auto;
 }
 
+@mixin dim($opacity: 0.5) {
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, $opacity);
+        content: "";
+    }
+}
+
 @mixin line($lineCount: 1) {
     /* 사용법 : @include line(라인수) */
     @if ($lineCount == 1) {

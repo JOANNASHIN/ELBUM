@@ -11,6 +11,25 @@
         overflow-y: auto;
         overflow-x: hidden;
     }
+
+    &__header {
+        &__fix {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: vw(100px);
+            padding: vw(20px 0);
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+
+            &.background {
+                background: #fff;
+            }
+        }
+    }
+    
     &__footer {
         display: block;
         height: vw(120px);

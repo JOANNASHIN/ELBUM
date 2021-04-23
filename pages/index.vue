@@ -4,9 +4,9 @@
 
         <section class="fb__main__visual">
             <h3 class="fb__title--hidden">상단 대표이미지</h3>
-            <figure class="visual__thumb">
+            <figure class="visual__text">
                 <span class="visual__logo">ELBUM</span>
-                <!-- <p class="visual__text">고객의 성공과 함께 성장합니다.</p> -->
+                <p class="visual__desc">저희는 고객의 성공과 함께 성장합니다.</p>
             </figure>
         </section>
 
@@ -54,12 +54,16 @@
             <h3 class="fb__title--hidden">회사정보</h3>
             <ul class="company__info">
                 <li class="company__info__list">
-                    <span class="company__info__name">Tel</span>
-                    <a href="tel:02-1234-1234" class="company__info__detail">02-1234-1234</a>
+                    <div class="company__info__wrapper">
+                        <span class="company__info__name">Tel</span>
+                        <a href="tel:02-1234-1234" class="company__info__detail">02-1234-1234</a>
+                    </div>
                 </li>
                 <li class="company__info__list">
-                    <span class="company__info__name">Location</span>
-                    <p class="company__info__detail">서울시 사당동</p>
+                    <div class="company__info__wrapper">
+                        <span class="company__info__name">Location</span>
+                        <p class="company__info__detail">서울시 사당동</p>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -67,5 +71,22 @@
 </template>
 
 <script>
-export default {}
+
+export default {
+    data() {
+        return {
+            isUserScrolling : 0,
+        }
+    },
+
+    created() {
+    },
+
+    mounted() {
+    },
+
+    methods: {
+      
+    }
+}
 </script>
