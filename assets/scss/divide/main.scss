@@ -1,155 +1,358 @@
-.fb {
-    &__main {
-        &__title {
-            font-weight: bold;
-            font-size: vw(40px);
-        }
-        
-        &__visual {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            height: vw(800px);
-            background: url("../images/weather/sunny1.jpg") no-repeat 0 0 / 100% auto;
 
-            @include dim();
 
-            .visual {
-                &__text {
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
-                    width: 100%;
-                    transform: translate(0, -50%);
-                    text-align: center;
-                    color: #fff;
-                }
 
-                &__logo {
-                    display: block;
-                    margin-bottom: vw(20px);
-                    font-family: "roboto";
-                    font-weight: bold;
-                    font-size: vw(50px);
-                }
+@media screen and (max-width: 1100px) {
+    .fb {
+        &__main {
+            overflow: hidden;
+            width: 100%;
 
-                &__desc {
-                    font-size: vw(24px);
+            &__title {
+                font-weight: bold;
+                font-size: vw(40px);
+            }
+            
+            &__visual {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                height: vw(800px);
+                background: url("../images/weather/sunny1.jpg") no-repeat 0 0 / 100% auto;
+    
+                @include dim();
+    
+                .visual {
+                    &__text {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 100%;
+                        transform: translate(0, -50%);
+                        text-align: center;
+                        color: #fff;
+                    }
+    
+                    &__logo {
+                        display: block;
+                        margin-bottom: vw(20px);
+                        font-style: italic;
+                        font-weight: bold;
+                        font-size: vw(80px);
+                        letter-spacing: vw(4px);
+                    }
+    
+                    &__desc {
+                        font-size: vw(24px);
+                    }
                 }
             }
-        }
-
-        &__we {
-            padding-top: vw(60px);
-            text-align: center;
-
-            .we {
-                &__detail {
-                    display: flex;
-                    flex-wrap: wrap;
-                    margin-top: vw(20px);
-
+    
+            &__we {
+                padding-top: vw(60px);
+                text-align: center;
+    
+                .we {
+                    &__detail {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: vw(20px);
+    
+                        &__box {
+                            flex: 0 0 50%;
+                            padding: vw(100px 0);
+    
+                            &:before {
+                                display: block;
+                                width: vw(50px);
+                                height: vw(50px);
+                                background: #666;
+                                margin: 0 auto vw(20px);
+                                content: "";
+                            }
+                        }
+    
+                        &__count {
+                            display: block;
+                            margin-bottom: vw(10px);
+                            font-family: "roboto";
+                            font-weight: bold;
+                            font-size: vw(30px);
+                        }
+    
+                        &__name {
+                            color: #999;
+                            font-size: vw(20px);
+                        }
+                    }
+                }
+            }
+    
+            &__menu {
+                .menu {
+                    &__wrapper {
+                        display: flex;
+                        flex-wrap: wrap;
+                        text-align: center;
+                    }
+    
                     &__box {
+                        display: flex;
+                        position: relative;
                         flex: 0 0 50%;
-                        padding: vw(100px 0);
-
+                        background: url("../images/weather/sunny1.jpg") no-repeat 0 0 / 100% auto;
+    
+                        @include dim();
+    
+                        &:after {
+                            display: block;
+                            padding-bottom: 100%;
+                            content: "";
+                        }
+                    }
+    
+                    &__name {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        color: #fff;
+                        font-size: vw(22px);
+                        transform: translate(-50%, -50%);
+    
                         &:before {
                             display: block;
                             width: vw(50px);
                             height: vw(50px);
-                            background: #666;
+                            background: #fff;
                             margin: 0 auto vw(20px);
                             content: "";
                         }
                     }
-
-                    &__count {
-                        display: block;
-                        margin-bottom: vw(10px);
-                        font-family: "roboto";
-                        font-weight: bold;
-                        font-size: vw(30px);
-                    }
-
-                    &__name {
-                        color: #999;
-                        font-size: vw(20px);
+                }
+            }
+    
+            &__company {
+                
+                .company {
+                    &__info {
+                        &__list {
+                            position: relative;
+                            height: vw(300px);
+                            background: url("../images/weather/darksky.jpg") no-repeat 0 0 / 100% auto;
+                            @include dim(0.3);
+    
+                            &:nth-of-type(2n) {
+                                transform: translate(-100%, 0);
+                            }
+    
+                            &:nth-of-type(2n+1) {
+                                transform: translate(100%, 0);
+                            }
+    
+                            &.active {
+                                transform: translate(0, 0);
+                                transition: all ease-in-out 0.8s;
+                            }
+                        }
+    
+                        &__wrapper {
+                            position: absolute;
+                            top: 50%;
+                            padding: vw(30px);
+                            transform: translate(0, -50%);
+                            color: #fff;
+                        }
+    
+                        &__name {
+                            display: block;
+                            font-size: vw(22px);
+                        }
+    
+                        &__detail {
+                            font-size: vw(40px);
+                        }
                     }
                 }
             }
         }
+    }
+}
 
-        &__menu {
-            .menu {
-                &__wrapper {
-                    display: flex;
-                    flex-wrap: wrap;
-                    text-align: center;
-                }
-
-                &__box {
-                    display: flex;
-                    position: relative;
-                    flex: 0 0 50%;
-                    background: url("../images/weather/sunny1.jpg") no-repeat 0 0 / 100% auto;
-
-                    @include dim();
-
-                    &:after {
-                        display: block;
-                        padding-bottom: 100%;
-                        content: "";
-                    }
-                }
-
-                &__name {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    color: #fff;
-                    font-size: vw(22px);
-                    transform: translate(-50%, -50%);
-
-                    &:before {
-                        display: block;
-                        width: vw(50px);
-                        height: vw(50px);
-                        background: #fff;
-                        margin: 0 auto vw(20px);
-                        content: "";
-                    }
-                }
+@media screen and (min-width: 1100px) {
+    .fb {
+        &__main {
+            &__title {
+                font-weight: bold;
+                font-size: 30px;
             }
-        }
 
-        &__company {
+            section:not(.fb__main__visual) {
+                display: block;
+                width: 1100px;
+                margin: 0 auto;
+            }
             
-            .company {
-                &__info {
-                    &__list {
-                        position: relative;
-                        height: vw(300px);
-                        background: url("../images/weather/darksky.jpg") no-repeat 0 0 / 100% auto;
-                        
-                        @include dim(0.3);
-                    }
-
-                    &__wrapper {
+            &__visual {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                height: 500px;
+                background: url("../images/weather/sunny1.jpg") no-repeat 0 0 / 100% auto;
+    
+                @include dim();
+    
+                .visual {
+                    &__text {
                         position: absolute;
                         top: 50%;
-                        padding: vw(30px);
+                        left: 0;
+                        width: 100%;
                         transform: translate(0, -50%);
+                        text-align: center;
                         color: #fff;
                     }
-
-                    &__name {
+    
+                    &__logo {
                         display: block;
-                        font-size: vw(22px);
+                        margin-bottom: 20px;
+                        font-style: italic;
+                        font-weight: bold;
+                        font-size: 60px;
+                        letter-spacing: 4px;
                     }
-
+    
+                    &__desc {
+                        font-size: 18px;
+                    }
+                }
+            }
+    
+            &__we {
+                padding-top: 60px;
+                text-align: center;
+    
+                .we {
                     &__detail {
-                        font-size: vw(40px);
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: 20px;
+    
+                        &__box {
+                            flex: 0 0 25%;
+                            padding: 100px 0;
+    
+                            &:before {
+                                display: block;
+                                width: 50px;
+                                height: 50px;
+                                background: #666;
+                                margin: 0 auto 20px;
+                                content: "";
+                            }
+                        }
+    
+                        &__count {
+                            display: block;
+                            margin-bottom: 4px;
+                            font-family: "roboto";
+                            font-weight: bold;
+                            font-size: 18px;
+                        }
+    
+                        &__name {
+                            color: #999;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+    
+            &__menu {
+                .menu {
+                    &__wrapper {
+                        display: flex;
+                        flex-wrap: wrap;
+                        text-align: center;
+                    }
+    
+                    &__box {
+                        display: flex;
+                        position: relative;
+                        flex: 0 0 25%;
+                        background: url("../images/weather/sunny1.jpg") no-repeat 0 0 / 100% auto;
+    
+                        @include dim();
+    
+                        &:after {
+                            display: block;
+                            padding-bottom: 100%;
+                            content: "";
+                        }
+                    }
+    
+                    &__name {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        color: #fff;
+                        font-size: 18px;
+                        transform: translate(-50%, -50%);
+    
+                        &:before {
+                            display: block;
+                            width: 50px;
+                            height: 50px;
+                            background: #fff;
+                            margin: 0 auto 20px;
+                            content: "";
+                        }
+                    }
+                }
+            }
+    
+            &__company {
+                
+                .company {
+                    &__info {
+                        display: flex;
+                        &__list {
+                            flex: 0 0 50%;
+                            position: relative;
+                            height: 300px;
+                            background: url("../images/weather/darksky.jpg") no-repeat 0 0 / 100% auto;
+                            @include dim(0.3);
+    
+                            &:nth-of-type(2n) {
+                                transform: translate(200%, 0);
+                            }
+    
+                            &:nth-of-type(2n+1) {
+                                transform: translate(-200%, 0);
+                            }
+    
+                            &.active {
+                                transform: translate(0, 0);
+                                transition: all ease-in-out 0.8s;
+                            }
+                        }
+    
+                        &__wrapper {
+                            position: absolute;
+                            top: 50%;
+                            padding: 30px;
+                            transform: translate(0, -50%);
+                            color: #fff;
+                        }
+    
+                        &__name {
+                            display: block;
+                            font-size: 22px;
+                        }
+    
+                        &__detail {
+                            font-size: 30px;
+                        }
                     }
                 }
             }

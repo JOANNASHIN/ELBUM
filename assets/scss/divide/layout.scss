@@ -1,107 +1,243 @@
-.fb {
-    #__nuxt,
-    #__layout {
-        width: 100%;
-        height: 100%;
-    }
-
-    &__layout {
-        width: 100%;
-        height: 100%;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
-
-    &__header {
-        &__fix {
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1;
+@media screen and (max-width: 1100px) {
+    .fb {
+        #__nuxt,
+        #__layout {
             width: 100%;
-            height: vw(100px);
-            padding: vw(20px 0);
-            border-bottom: 1px solid #ddd;
-            text-align: center;
-
-            &.background {
-                background: #fff;
-            }
+            height: 100%;
         }
-    }
+
+        &__title {
+            color: #000;
+            font-weight: 400;
+            font-size: 30px;
+            font-style:italic;
     
-    &__footer {
-        display: block;
-        height: vw(120px);
-        padding: 0 0 calc(constant(safe-area-inset-bottom));
-        padding: 0 0 calc(env(safe-area-inset-bottom));
-
-
-        &.open {
-            .fb {
-                &__footer__menu {
-                    background-image: url("../images/common/btn-close-wt.png");
-                }
-
-                &__menuLayer {
-                    top: 0;
-                    transition: all ease-in-out 0.5s;
-                }
-            }            
+            &--hidden {
+                font-size: 0;
+                line-height: 0;
+            }
         }
 
-        &__inner {
-            position: fixed;
-            left: 0;
-            bottom: 0;
+        &__layout {
             width: 100%;
-            z-index: 5;
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        &__header {
+            &__fix {
+                // position: fixed;
+                // top: 0;
+                // left: 0;
+                z-index: 1;
+                width: 100%;
+                height: vw(100px);
+                padding: vw(20px 0);
+                border-bottom: 1px solid rgba(255,255,255,0.3);
+                text-align: center;
+
+                // &.background {
+                //     background: rgba(0, 0, 0, 1);
+                // }
+            }
+        }
+        
+        &__footer {
+            display: block;
             height: vw(120px);
-            text-align: center;
-        }
+            padding: 0 0 calc(constant(safe-area-inset-bottom));
+            padding: 0 0 calc(env(safe-area-inset-bottom));
 
-        &__menu {
-          
-            display: inline-block;
-            width: vw(100px);
-            height: vw(100px);
-            border-radius: 50%;
-            background: rgba(0,0,0, 0.5) url("../images/common/btn-menu-wt.png") no-repeat center center / vw(40px 40px);
-            font-size: 0;
-        }
-    }
 
-    &__menuLayer {
-        position: fixed;
-        // bottom: -100%;
-        top: 100%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 100%;
-        height: 100%;//calc(100% - 16vw);
-        background: #fff;//rgba(0, 0, 0, 0.7);
-        z-index: 4;
-        transition: top ease-in-out 0.5s;
+            &.open {
+                .fb {
+                    &__footer__menu {
+                        background-image: url("../images/common/btn-close-wt.png");
+                    }
 
-        .menu {
-            &__wrapper{
-
+                    &__menuLayer {
+                        top: 0;
+                        transition: all ease-in-out 0.5s;
+                    }
+                }            
             }
 
-            &__each {
-                display: block;
+            &__inner {
+                position: fixed;
+                left: 0;
+                bottom: 0;
                 width: 100%;
-                padding: vw(50px 0);
+                z-index: 5;
+                height: vw(120px);
                 text-align: center;
-                background: #eeeeee;
-                color: #666;
-                font-size: vw(30px);
-                font-weight: 600;
+            }
 
-                &:nth-child(2n) {
-                    background: #999;
-                    color: #fff;
+            &__menu {
+            
+                display: inline-block;
+                width: vw(100px);
+                height: vw(100px);
+                border-radius: 50%;
+                background: rgba(0,0,0, 0.5) url("../images/common/btn-menu-wt.png") no-repeat center center / vw(40px 40px);
+                font-size: 0;
+            }
+        }
+
+        &__menuLayer {
+            position: fixed;
+            // bottom: -100%;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 100%;
+            height: 100%;//calc(100% - 16vw);
+            background: #fff;//rgba(0, 0, 0, 0.7);
+            z-index: 4;
+            transition: top ease-in-out 0.5s;
+
+            .menu {
+                &__wrapper{
+
+                }
+
+                &__each {
+                    display: block;
+                    width: 100%;
+                    padding: vw(50px 0);
+                    text-align: center;
+                    background: #eeeeee;
+                    color: #666;
+                    font-size: vw(30px);
+                    font-weight: 600;
+
+                    &:nth-child(2n) {
+                        background: #999;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .fb {
+        #__nuxt,
+        #__layout {
+            width: 100%;
+            height: 100%;
+        }
+
+        &__layout {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        &__title {
+            color: #000;
+            font-weight: 400;
+            font-size: 30px;
+            font-style:italic;
+    
+            &--hidden {
+                font-size: 0;
+                line-height: 0;
+            }
+        }
+
+        &__header {
+            &__fix {
+                // position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                width: 100%;
+                padding: 20px;
+                border-bottom: 1px solid rgba(255,255,255,0.3);
+                text-align: center;
+
+                // &.background {
+                //     background: rgba(0, 0, 0, 1);
+                // }
+            }
+        }
+        
+        &__footer {
+            display: block;
+            padding: 0 0 calc(constant(safe-area-inset-bottom));
+            padding: 0 0 calc(env(safe-area-inset-bottom));
+
+
+            &.open {
+                .fb {
+                    &__footer__menu {
+                        background-image: url("../images/common/btn-close-wt.png");
+                    }
+
+                    &__menuLayer {
+                        top: 0;
+                        transition: all ease-in-out 0.5s;
+                    }
+                }            
+            }
+
+            &__inner {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                z-index: 5;
+                height: vw(120px);
+                text-align: center;
+            }
+
+            &__menu {
+            
+                display: inline-block;
+                width: vw(100px);
+                height: vw(100px);
+                border-radius: 50%;
+                background: rgba(0,0,0, 0.5) url("../images/common/btn-menu-wt.png") no-repeat center center / vw(40px 40px);
+                font-size: 0;
+            }
+        }
+
+        &__menuLayer {
+            position: fixed;
+            // bottom: -100%;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 100%;
+            height: 100%;//calc(100% - 16vw);
+            background: #fff;//rgba(0, 0, 0, 0.7);
+            z-index: 4;
+            transition: top ease-in-out 0.5s;
+
+            .menu {
+                &__wrapper{
+
+                }
+
+                &__each {
+                    display: block;
+                    width: 100%;
+                    padding: vw(50px 0);
+                    text-align: center;
+                    background: #eeeeee;
+                    color: #666;
+                    font-size: vw(30px);
+                    font-weight: 600;
+
+                    &:nth-child(2n) {
+                        background: #999;
+                        color: #fff;
+                    }
                 }
             }
         }

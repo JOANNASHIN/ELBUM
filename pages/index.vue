@@ -14,25 +14,25 @@
             <h3 class="fb__main__title">WHO WE ARE</h3>
             <ul class="we__detail">
                 <li class="we__detail__box">
-                    <em class="we__detail__count">21</em>
+                    <em class="we__detail__count">{{count1.from}}</em>
                     <span class="we__detail__name">연차+</span>
                 </li>
                 <li class="we__detail__box">
-                    <em class="we__detail__count">21</em>
+                    <em class="we__detail__count">{{count2.from}}</em>
                     <span class="we__detail__name">프로젝트+</span>
                 </li>
                 <li class="we__detail__box">
-                    <em class="we__detail__count">21</em>
+                    <em class="we__detail__count">{{count3.from}}</em>
                     <span class="we__detail__name">유지관리+</span>
                 </li>
                 <li class="we__detail__box">
-                    <em class="we__detail__count">21</em>
+                    <em class="we__detail__count">{{count4.from}}</em>
                     <span class="we__detail__name">고객사+</span>
                 </li>
             </ul>
         </section>
 
-        <section class="fb__main__menu">
+        <section class="fb__main__menu js__menu">
             <h3 class="fb__title--hidden">메뉴</h3>
             <ul class="menu__wrapper">
                 <li class="menu__box">
@@ -50,7 +50,7 @@
             </ul>
         </section>
 
-        <section class="fb__main__company">
+        <section class="fb__main__company js__company">
             <h3 class="fb__title--hidden">회사정보</h3>
             <ul class="company__info">
                 <li class="company__info__list">
@@ -71,22 +71,83 @@
 </template>
 
 <script>
-
+import $ from "jquery";
+console.log($)
+window.$ = $;
 export default {
     data() {
         return {
             isUserScrolling : 0,
+            startCount: 0,
+            count1: {
+                from: 0,
+                to: 20
+            },
+            count2: {
+                from: 0,
+                to: 40
+            },
+            count3: {
+                from: 0,
+                to: 100
+            },
+            count4: {
+                from: 0,
+                to: 90
+            },
         }
     },
 
     created() {
+        window.addEventListener("scroll", this.scrollEvent)
     },
 
     mounted() {
+        setTimeout(this.countPlus, 100);
+        setTimeout(this.countPlus2, 100);
+        setTimeout(this.countPlus3, 50);
+        setTimeout(this.countPlus4, 100);
     },
 
     methods: {
-      
+        scrollEvent(e) {
+            const _companyOffset = $(".js__menu").offset().top;
+            
+            if (window.scrollY >= _companyOffset) {
+                $(".company__info__list").addClass("active");
+            }
+            else {
+              
+            }
+        },
+
+        countPlus() {
+            if (this.count1.from <= this.count1.to) {
+                this.count1.from++;
+                setTimeout(this.countPlus, 30)
+            }
+        },
+
+        countPlus2() {
+            if (this.count2.from <= this.count2.to) {
+                this.count2.from++;
+                setTimeout(this.countPlus2, 10)
+            }
+        },
+
+        countPlus3() {
+            if (this.count3.from <= this.count3.to) {
+                this.count3.from++;
+                setTimeout(this.countPlus3, 10)
+            }
+        },
+
+        countPlus4() {
+            if (this.count4.from <= this.count4.to) {
+                this.count4.from++;
+                setTimeout(this.countPlus4, 10)
+            }
+        }
     }
 }
 </script>
