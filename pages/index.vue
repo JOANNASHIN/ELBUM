@@ -12,7 +12,7 @@
 
         <section class="fb__main__we">
             <h3 class="fb__main__title">WHO WE ARE</h3>
-            <ul class="we__detail">
+            <ul class="we__detail js__we__detail">
                 <li class="we__detail__box">
                     <em class="we__detail__count">{{count1.from}}</em>
                     <span class="we__detail__name">연차+</span>
@@ -103,6 +103,9 @@ export default {
     },
 
     mounted() {
+        const $we = $(".js__we__detail");
+        $we.fadeIn("slow").addClass("active");
+
         setTimeout(this.countPlus, 100);
         setTimeout(this.countPlus2, 100);
         setTimeout(this.countPlus3, 50);
@@ -111,13 +114,13 @@ export default {
 
     methods: {
         scrollEvent(e) {
+            const $company = $(".company__info__list");
             const _companyOffset = $(".js__menu").offset().top;
             
-            if (window.scrollY >= _companyOffset) {
-                $(".company__info__list").addClass("active");
-            }
-            else {
-              
+            let _current = window.scrollY;
+
+            if (_current >= _companyOffset) {
+                $company.addClass("active");
             }
         },
 

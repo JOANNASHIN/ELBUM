@@ -17,7 +17,7 @@
                 align-items: center;
                 justify-content: center;
                 position: relative;
-                height: vw(500px);
+                height: vw(560px);
                 background: url("../images/main/background.jpg") no-repeat 0 center / 100% auto;
     
                 @include dim(0.2);
@@ -49,6 +49,7 @@
             }
     
             &__we {
+                overflow: hidden;
                 padding-top: vw(100px);
                 text-align: center;
     
@@ -57,6 +58,14 @@
                         display: flex;
                         flex-wrap: wrap;
                         margin-top: vw(20px);
+                        transform: translate(0, -80%);
+                        opacity: 0.3;
+
+                        &.active {
+                            opacity: 1;
+                            transform: translate(0, 0);
+                            transition: all ease-in-out 0.8s;
+                        }
     
                         &__box {
                             position: relative;
@@ -93,7 +102,7 @@
                             margin-bottom: vw(10px);
                             font-family: "roboto";
                             font-weight: bold;
-                            font-size: vw(30px);
+                            font-size: vw(35px);
                         }
     
                         &__name {
@@ -180,7 +189,7 @@
     
                             &.active {
                                 transform: translate(0, 0);
-                                transition: all ease-in-out 0.8s;
+                                transition: all ease-in-out 1.2s;
                             }
                         }
     
@@ -258,6 +267,7 @@
             }
     
             &__we {
+                overflow: hidden;
                 padding-top: 60px;
                 text-align: center;
     
@@ -266,6 +276,14 @@
                         display: flex;
                         flex-wrap: wrap;
                         margin-top: 20px;
+                        transform: translate(0, -30%);
+                        opacity: 0.3;
+
+                        &.active {
+                            opacity: 1;
+                            transform: translate(0, 0);
+                            transition: all ease-in-out 0.8s;
+                        }
     
                         &__box {
                             position: relative;
@@ -390,7 +408,7 @@
     
                             &.active {
                                 transform: translate(0, 0);
-                                transition: all ease-in-out 0.8s;
+                                transition: all ease-in-out 1s;
                             }
                         }
     
