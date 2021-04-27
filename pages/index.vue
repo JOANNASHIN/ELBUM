@@ -21,7 +21,7 @@
                     <em class="we__detail__count">{{count2.from}}</em>
                     <span class="we__detail__name">프로젝트+</span>
                 </li>
-                <li class="we__detail__box">
+                <li class="we__detail__box js__menu">
                     <em class="we__detail__count">{{count3.from}}</em>
                     <span class="we__detail__name">유지관리+</span>
                 </li>
@@ -32,7 +32,7 @@
             </ul>
         </section>
 
-        <section class="fb__main__menu js__menu">
+        <section class="fb__main__menu">
             <h3 class="fb__title--hidden">메뉴</h3>
             <ul class="menu__wrapper">
                 <li class="menu__box">
@@ -106,10 +106,10 @@ export default {
         const $we = $(".js__we__detail");
         $we.fadeIn("slow").addClass("active");
 
-        setTimeout(this.countPlus, 100);
-        setTimeout(this.countPlus2, 100);
-        setTimeout(this.countPlus3, 50);
-        setTimeout(this.countPlus4, 100);
+        setTimeout(this.countPlus, 500);
+        setTimeout(this.countPlus2, 500);
+        setTimeout(this.countPlus3, 500);
+        setTimeout(this.countPlus4, 500);
     },
 
     methods: {
