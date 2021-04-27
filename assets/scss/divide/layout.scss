@@ -8,8 +8,8 @@
 
         &__title {
             color: #000;
-            font-weight: 400;
-            font-size: vw(30px);
+            font-weight: bold;
+            font-size: vw(40px);
             font-style:italic;
     
             &--hidden {
@@ -30,7 +30,7 @@
                 // position: fixed;
                 // top: 0;
                 // left: 0;
-                z-index: 1;
+                // z-index: 1;
                 width: 100%;
                 // height: vw(100px);
                 padding: vw(20px 0);
@@ -69,7 +69,7 @@
 
         &__title {
             color: #000;
-            font-weight: 400;
+            font-weight: bold;
             font-size: 30px;
             font-style:italic;
     
@@ -82,9 +82,9 @@
         &__header {
             &__fix {
                 // position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 1;
+                // top: 0;
+                // left: 0;
+                // z-index: 1;
                 width: 100%;
                 padding: 20px;
                 border-bottom: 1px solid rgba(255,255,255,0.3);
@@ -98,42 +98,6 @@
         
         &__footer {
             display: block;
-            padding: 0 0 calc(constant(safe-area-inset-bottom));
-            padding: 0 0 calc(env(safe-area-inset-bottom));
-
-
-            &.open {
-                .fb {
-                    &__footer__menu {
-                        background-image: url("../images/common/btn-close-wt.png");
-                    }
-
-                    &__menuLayer {
-                        top: 0;
-                        transition: all ease-in-out 0.5s;
-                    }
-                }            
-            }
-
-            &__inner {
-                position: fixed;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                z-index: 5;
-                height: vw(120px);
-                text-align: center;
-            }
-
-            &__menu {
-            
-                display: inline-block;
-                width: vw(100px);
-                height: vw(100px);
-                border-radius: 50%;
-                background: rgba(0,0,0, 0.5) url("../images/common/btn-menu-wt.png") no-repeat center center / vw(40px 40px);
-                font-size: 0;
-            }
         }
 
         &__menuLayer {

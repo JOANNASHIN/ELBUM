@@ -17,10 +17,10 @@
                 align-items: center;
                 justify-content: center;
                 position: relative;
-                height: vw(800px);
-                background: url("../images/weather/sunny1.jpg") no-repeat 0 0 / 100% auto;
+                height: vw(500px);
+                background: url("../images/main/background.jpg") no-repeat 0 center / 100% auto;
     
-                @include dim();
+                @include dim(0.2);
     
                 .visual {
                     &__text {
@@ -49,7 +49,7 @@
             }
     
             &__we {
-                padding-top: vw(60px);
+                padding-top: vw(100px);
                 text-align: center;
     
                 .we {
@@ -59,15 +59,31 @@
                         margin-top: vw(20px);
     
                         &__box {
+                            position: relative;
                             flex: 0 0 50%;
+                            margin: vw(30px 0 0);
                             padding: vw(100px 0);
+                            color: #fff;
     
                             &:before {
-                                display: block;
-                                width: vw(50px);
-                                height: vw(50px);
-                                background: #666;
-                                margin: 0 auto vw(20px);
+                                // display: block;
+                                // width: vw(50px);
+                                // height: vw(50px);
+                                // background: #666;
+                                // margin: 0 auto vw(20px);
+                                // content: "";
+                            }
+
+                            &:after {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                z-index: -1;
+                                width: vw(250px);
+                                height: vw(250px);
+                                background: #000;
+                                border-radius: 50%;
+                                transform: translate(-50%, -50%);
                                 content: "";
                             }
                         }
@@ -89,6 +105,7 @@
             }
     
             &__menu {
+                padding-top: vw(100px);
                 .menu {
                     &__wrapper {
                         display: flex;
@@ -100,14 +117,26 @@
                         display: flex;
                         position: relative;
                         flex: 0 0 50%;
-                        background: url("../images/weather/sunny1.jpg") no-repeat 0 0 / 100% auto;
-    
-                        @include dim();
+                        background: url("../images/main/house1.jpg") no-repeat center center / auto 100%;
+                        border: 1px solid #fff;
+                        @include dim(0.4);
     
                         &:after {
                             display: block;
-                            padding-bottom: 100%;
+                            padding-bottom: 67%;
                             content: "";
+                        }
+
+                        &:nth-child(2) {
+                            background-image: url("../images/main/bg1.jpg");
+                        }
+
+                        &:nth-child(3) {
+                            background-image: url("../images/main/bg2.jpg");
+                        }
+
+                        &:nth-child(4) {
+                            background-image: url("../images/main/bg3.jpg");
                         }
                     }
     
@@ -116,23 +145,23 @@
                         top: 50%;
                         left: 50%;
                         color: #fff;
-                        font-size: vw(22px);
+                        font-weight: bold;
+                        font-size: vw(30px);
                         transform: translate(-50%, -50%);
     
                         &:before {
-                            display: block;
-                            width: vw(50px);
-                            height: vw(50px);
-                            background: #fff;
-                            margin: 0 auto vw(20px);
-                            content: "";
+                            // display: block;
+                            // width: vw(50px);
+                            // height: vw(50px);
+                            // background: #fff;
+                            // margin: 0 auto vw(20px);
+                            // content: "";
                         }
                     }
                 }
             }
     
             &__company {
-                
                 .company {
                     &__info {
                         &__list {
@@ -198,9 +227,9 @@
                 justify-content: center;
                 position: relative;
                 height: 500px;
-                background: url("../images/weather/sunny1.jpg") no-repeat 0 0 / 100% auto;
+                background: url("../images/main/background.jpg") no-repeat 0 0 / 100% auto;
     
-                @include dim();
+                @include dim(0.2);
     
                 .visual {
                     &__text {
@@ -239,15 +268,30 @@
                         margin-top: 20px;
     
                         &__box {
+                            position: relative;
                             flex: 0 0 25%;
                             padding: 100px 0;
+                            color: #fff;
     
                             &:before {
-                                display: block;
-                                width: 50px;
-                                height: 50px;
-                                background: #666;
-                                margin: 0 auto 20px;
+                                // display: block;
+                                // width: 50px;
+                                // height: 50px;
+                                // background: #666;
+                                // margin: 0 auto 20px;
+                                // content: "";
+                            }
+
+                            &:after {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                z-index: -1;
+                                width: 180px;
+                                height: 180px;
+                                background: #000;
+                                border-radius: 50%;
+                                transform: translate(-50%, -50%);
                                 content: "";
                             }
                         }
@@ -269,6 +313,7 @@
             }
     
             &__menu {
+                padding-top: 100px;
                 .menu {
                     &__wrapper {
                         display: flex;
@@ -280,14 +325,25 @@
                         display: flex;
                         position: relative;
                         flex: 0 0 25%;
-                        background: url("../images/weather/sunny1.jpg") no-repeat 0 0 / 100% auto;
-    
-                        @include dim();
+                        background: url("../images/main/house1.jpg") no-repeat center center / auto 100%;
+                        @include dim(0.4);
     
                         &:after {
                             display: block;
                             padding-bottom: 100%;
                             content: "";
+                        }
+
+                        &:nth-child(2) {
+                            background-image: url("../images/main/bg1.jpg");
+                        }
+
+                        &:nth-child(3) {
+                            background-image: url("../images/main/bg2.jpg");
+                        }
+
+                        &:nth-child(4) {
+                            background-image: url("../images/main/bg3.jpg");
                         }
                     }
     
@@ -300,18 +356,19 @@
                         transform: translate(-50%, -50%);
     
                         &:before {
-                            display: block;
-                            width: 50px;
-                            height: 50px;
-                            background: #fff;
-                            margin: 0 auto 20px;
-                            content: "";
+                            // display: block;
+                            // width: 50px;
+                            // height: 50px;
+                            // background: #fff;
+                            // margin: 0 auto 20px;
+                            // content: "";
                         }
                     }
                 }
             }
     
             &__company {
+                padding-top: 100px;
                 
                 .company {
                     &__info {
@@ -319,7 +376,7 @@
                         &__list {
                             flex: 0 0 50%;
                             position: relative;
-                            height: 300px;
+                            height: 200px;
                             background: url("../images/weather/darksky.jpg") no-repeat 0 0 / 100% auto;
                             @include dim(0.3);
     

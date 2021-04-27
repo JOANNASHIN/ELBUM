@@ -222,7 +222,7 @@
 @media screen and (min-width: 1100px) {
   .fb {
     &__footer {
-      margin-top: 80px;
+      margin-top: 180px;
       background: #000;
       color: #fff;
 
