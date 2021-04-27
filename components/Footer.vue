@@ -223,7 +223,8 @@
   .fb {
     &__footer {
       margin-top: 80px;
-      background: #ddd;
+      background: #000;
+      color: #fff;
 
 
       .footer {
@@ -231,7 +232,20 @@
           display: block;
           width: 1100px;
           margin: 0 auto;
-          padding: 80px 0;
+          padding: 45px 0;
+        }
+
+        &__customer {
+            font-size: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        &__info {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+            line-height: 1.5;
         }
       }
     }
