@@ -36,16 +36,24 @@
             <h3 class="fb__title--hidden">메뉴</h3>
             <ul class="menu__wrapper">
                 <li class="menu__box">
-                    <a class="menu__name" href="#">공지사항</a>
+                    <a class="menu__link" href="#">
+                        <span class="menu__name">공지사항</span>
+                    </a>
                 </li>
                 <li class="menu__box">
-                    <a class="menu__name" href="#">이용안내</a>
+                    <a class="menu__link" href="#">
+                        <span class="menu__name">이용안내</span>
+                    </a>
                 </li>
                 <li class="menu__box">
-                    <a class="menu__name" href="#">문의제안</a>
+                    <a class="menu__link" href="#">
+                        <span class="menu__name">문의제안</span>
+                    </a>
                 </li>
                 <li class="menu__box">
-                    <a class="menu__name" href="#">요금안내</a>
+                    <a class="menu__link" href="#">
+                        <span class="menu__name">요금안내</span>
+                    </a>
                 </li>
             </ul>
         </section>

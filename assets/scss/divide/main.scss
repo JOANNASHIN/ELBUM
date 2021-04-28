@@ -58,12 +58,12 @@
                         display: flex;
                         flex-wrap: wrap;
                         margin-top: vw(20px);
-                        transform: translate(0, -80%);
+                        // transform: translate(0, -80%);
                         opacity: 0.3;
 
                         &.active {
                             opacity: 1;
-                            transform: translate(0, 0);
+                            // transform: translate(0, 0);
                             transition: all ease-in-out 0.8s;
                         }
     
@@ -276,12 +276,12 @@
                         display: flex;
                         flex-wrap: wrap;
                         margin-top: 20px;
-                        transform: translate(0, -30%);
+                        // transform: translate(0, -5%);
                         opacity: 0.3;
 
                         &.active {
                             opacity: 1;
-                            transform: translate(0, 0);
+                            // transform: translate(0, 0);
                             transition: all ease-in-out 0.8s;
                         }
     
@@ -340,28 +340,45 @@
                     }
     
                     &__box {
+                        overflow: hidden;
                         display: flex;
                         position: relative;
                         flex: 0 0 25%;
+
+                        &:nth-child(2) {
+                            .menu__link {
+                                background-image: url("../images/main/bg1.jpg");
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            .menu__link {
+                                background-image: url("../images/main/bg2.jpg");
+                            }
+                        }
+
+                        &:nth-child(4) {
+                            .menu__link {
+                                background-image: url("../images/main/bg3.jpg");
+                            }
+                        }
+                    }
+
+                    &__link {
+                        display: block;
+                        width: 100%;
                         background: url("../images/main/house1.jpg") no-repeat center center / auto 100%;
                         @include dim(0.4);
-    
+
                         &:after {
                             display: block;
                             padding-bottom: 100%;
                             content: "";
                         }
 
-                        &:nth-child(2) {
-                            background-image: url("../images/main/bg1.jpg");
-                        }
-
-                        &:nth-child(3) {
-                            background-image: url("../images/main/bg2.jpg");
-                        }
-
-                        &:nth-child(4) {
-                            background-image: url("../images/main/bg3.jpg");
+                        &:hover {
+                            transform: scale(1.2);
+                            transition: all linear 0.2s;                 
                         }
                     }
     
