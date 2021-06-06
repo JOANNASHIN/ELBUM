@@ -1,7 +1,9 @@
 <template>
     <header class="fb__header">
         <div id="fixtarget" class="fb__header__fix">
-            <h1 class="fb__title">ELBUM</h1>
+            <h1 class="fb__title">
+                <a href="/">ELBUM</a>
+            </h1>
         </div>
     </header>
 </template>
