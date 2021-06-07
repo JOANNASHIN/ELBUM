@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'accountApp',
+    title: 'ELBUM',
     
     htmlAttrs: {
       lang: 'ko'
@@ -17,7 +17,8 @@ export default {
     ],
     
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', sizes: '96x96', href: '/favicon96x96.png' }
     ],
     
     bodyAttrs: {
@@ -28,6 +29,10 @@ export default {
         {src: "/__/firebase/8.4.1/firebase-app.js"},
         {src: "/__/firebase/init.js"},
     ]
+  },
+
+  server: {
+      port: 3001
   },
 
   //dev모드에서 자동 새로고침

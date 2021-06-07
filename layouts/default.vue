@@ -1,7 +1,9 @@
 <template>
   <div>
     <Header></Header>
-    <Nuxt />
+    <div class="fb__content">
+        <Nuxt />
+    </div>
     <Footer></Footer>
   </div>
 </template>

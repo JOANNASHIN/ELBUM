@@ -5,16 +5,17 @@
                 <span class="footer__customer__name">
                   고객문의 대표전화
                 </span>
-                <a href="tel:1566-0228" class="footer__customer__tel">1234-5678</a>
+                <a href="tel:070-8712-0013" class="footer__customer__tel">070-8712-0013</a>
             </div>
             <p class="footer__info">
                 (주) ELBUM&nbsp;&nbsp;&nbsp;&nbsp;대표이사 : 류은우<br>
-                사업자등록번호 : 123-45-67891<br>
-                주소 : 서울특별시 라라로 라라라 12<br>
-                통신 판매업 신고 : 2020-서울강남-12345&nbsp;&nbsp;<a href="#" target="_blank" class="btn__biz">사업자 정보확인</a><br>
+                사업자등록번호 : 743-81-02142<br>
+                법인등록번호 : 180111-1353141<br>
+                주소 : 부산광역시 금정구 금강로 271 (미주빌딩), 407호<br>
+                통신판매업신고 : 2020-부산금정-0011호<br>
                 개인정보보호책임자 : 류은우<br>
-                e-mail : TEST@TEST.com<br>
-                Copyright © 2020 ELBUM Co., Ltd. All rights reserved<br>
+                e-mail : rew1209@outlook.kr<br>
+                Copyright © 2020 ELBUM Co., Ltd. All rights reserved<br>               
             </p> 
         </div>
     </footer>
@@ -23,7 +24,6 @@
     export default {
         data() {
             return {
-                menuOpen: false,
             }
         }
     }

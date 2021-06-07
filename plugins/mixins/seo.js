@@ -11,12 +11,12 @@ export default {
 
     head() {
         return {
-            title: "account App",
+            title: "ELBUM",
             meta: [
                 {
                     hid: "description",
                     name: "description",
-                    content: "가계부 앱 포트폴리오 어플리케이션"
+                    content: "ELBUM"
                 },
             ]
         }
@@ -30,7 +30,6 @@ export default {
 
     created() {
         if (process.server) {
-            console.log("서버사이드 렌더링중")
         }
     },
 

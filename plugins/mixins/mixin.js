@@ -3,9 +3,9 @@ import $ from "jquery";
 const mixin = {
     methods: {
         /**
-                 * api통신
-                 * @param {*} object 
-                 */
+         * api통신
+         * @param {*} object 
+         */
         requestApi (object) {
             if (!object.url) return ;
             

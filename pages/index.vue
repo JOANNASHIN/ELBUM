@@ -36,23 +36,23 @@
             <h3 class="fb__title--hidden">메뉴</h3>
             <ul class="menu__wrapper">
                 <li class="menu__box">
-                    <a class="menu__link" href="#">
+                    <a class="menu__link" href="/notice">
                         <span class="menu__name">공지사항</span>
                     </a>
                 </li>
                 <li class="menu__box">
-                    <a class="menu__link" href="#">
-                        <span class="menu__name">이용안내</span>
+                    <a class="menu__link" href="/company">
+                        <span class="menu__name">회사개요</span>
                     </a>
                 </li>
                 <li class="menu__box">
-                    <a class="menu__link" href="#">
+                    <a class="menu__link" href="/qna">
                         <span class="menu__name">문의제안</span>
                     </a>
                 </li>
                 <li class="menu__box">
-                    <a class="menu__link" href="#">
-                        <span class="menu__name">요금안내</span>
+                    <a class="menu__link" href="https://smartstore.naver.com/eblaze" target="_blank">
+                        <span class="menu__name">제품안내</span>
                     </a>
                 </li>
             </ul>
@@ -64,13 +64,14 @@
                 <li class="company__info__list">
                     <div class="company__info__wrapper">
                         <span class="company__info__name">Tel</span>
-                        <a href="tel:02-1234-1234" class="company__info__detail">02-1234-1234</a>
+                        <a href="tel:070-8712-0013" class="company__info__detail">070-8712-0013</a>
+                        <a href="#" class="company__info__detail">China P: +86 17734453783</a>
                     </div>
                 </li>
                 <li class="company__info__list">
                     <div class="company__info__wrapper">
                         <span class="company__info__name">Location</span>
-                        <p class="company__info__detail">서울시 사당동</p>
+                        <p class="company__info__detail">부산광역시 금정구 금강로 271 (미주빌딩), 407호</p>
                     </div>
                 </li>
             </ul>
@@ -80,8 +81,8 @@
 
 <script>
 import $ from "jquery";
-console.log($)
 window.$ = $;
+
 export default {
     data() {
         return {
