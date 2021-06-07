@@ -4,10 +4,13 @@
 
         <section class="fb__main__visual">
             <h3 class="fb__title--hidden">상단 대표이미지</h3>
-            <figure class="visual__text">
+            <figure>
+                <img src="~/assets/images/main/background.jpg">
+            </figure>
+            <div class="visual__text">
                 <span class="visual__logo">ELBUM</span>
                 <p class="visual__desc">저희는 고객의 성공과 함께 성장합니다.</p>
-            </figure>
+            </div>
         </section>
 
         <section class="fb__main__we">
