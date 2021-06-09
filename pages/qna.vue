@@ -92,11 +92,6 @@ export default {
 
 <style lang="scss">
     .fb {
-        &__qna {
-            width: 1100px;
-            margin: 0 auto 100px;
-        }
-
         .fb__main__visual {
             margin-bottom: 100px;
         }
