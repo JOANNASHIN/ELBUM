@@ -1,33 +1,33 @@
 <template>
-    <section class="fb__qna">
-        <section class="fb__main__visual">
-            <h3 class="fb__title--hidden">상단 대표이미지</h3>
-            <figure>
-                <img src="~/assets/images/main/bg2.jpg">
-            </figure>
-        </section>
-    
-        <section class="notice__search">
-            <header class="notice__header">
-                <h2 class="notice__title">문의/제안</h2>
-            </header>
-        </section>
+    <section class="fb__qna fb__page">
+        <h2 class="fb__page__title">문의/제안</h2>
 
-        <!-- <form @submit="sendEmail()"> -->
+        <div class="fb__qna__form">
+            <span class="fb__qna__tip">이메일로 문의 / 제안을 보내주세요.</span>
+
             <label>
-                <input type="text" placeholder="이메일을 입력하세요." maxlength="30" v-model="content.emailid">
+                <span class="fb__qna__label">연락 받으실 이메일</span>
+                <input type="text" placeholder="연락을 받으실 이메일을 입력하세요." maxlength="30" v-model="content.email">
             </label> 
+
             <label>
-                <input type="text" placeholder="이름을 입력하세요." maxlength="30" v-model="content.sendname">
+                <span class="fb__qna__label">이름</span>
+                <input type="text" placeholder="이름을 입력하세요." maxlength="30" v-model="content.name">
             </label> 
+
             <label>
+                <span class="fb__qna__label">제목</span>
                 <input type="text" placeholder="제목을 입력하세요." maxlength="30" v-model="content.title">
             </label> 
+
             <label>
                 <textarea type="text" placeholder="내용을 입력하세요." maxlength="100" v-model="content.message"></textarea>
             </label> 
-            <button type="button" @click="sendEmail($event)">보내기</button>
-        <!-- </form> -->
+
+            <div class="fb__qna__bottom">
+                <button type="button" class="fb__qna__send" @click="sendEmail($event)">이메일 보내기</button>
+            </div>
+        </div>
 </section>
 </template>
 <script>
@@ -39,46 +39,39 @@ export default {
         return {
             SERVICE_ID: "service_ewx0f38",
             TEMPLATE_ID: "template_th1s929",
+            API_KEY: "user_rd9DdB4KQe2PyiiUTxon5",
             content: {
-                emailid: "",
-                sendname: "",
+                email: "",
+                name: "",
                 title: "",
                 message: ""
             }
         }
     },
 
-    mounted() {
-        // this.sendEmail();
-    },
-
     methods: {
-        sendEmail(e) {
-            // console.log("test",emailjs,this.SERVICE_ID)
-
+        sendEmail() {
             const templateParams = {
-                // emailid: "emailid",
-                // sendname: "sendname",
-                // title: "title",
-                // message: "messagemessagemessage"
-                email: this.content.emailid,
-                name: this.content.sendname,
+                email: this.content.email,
+                name: this.content.name,
                 title: this.content.title,
                 message: this.content.message,
             };
 
             emailjs
-                .send("service_ewx0f38", "template_th1s929", templateParams, "user_rd9DdB4KQe2PyiiUTxon5")
-                .then(
+                // .send("service_ewx0f38", "template_th1s929", templateParams, "user_rd9DdB4KQe2PyiiUTxon5")
+                .send (this.SERVICE_ID, this.TEMPLATE_ID, templateParams, this.API_KEY)
+                .then (
                     function(response) {
                         console.log("success", response)
+                        alert("이메일을 보냈습니다! <br> 곧 연락드리겠습니다. 감사합니다!");
                     },
 
                     function (error) {
-                        console.log("Error")
+                        console.error("Error", error)
+                        alert("오류가 발생하였습니다.<br> 잠시 후 다시 시도 부탁드립니다.");
                     }
                 )
-            
         }
     }
 }
