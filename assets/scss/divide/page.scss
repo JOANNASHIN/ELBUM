@@ -1,82 +1,241 @@
-.fb {
-    &__page {
+@media screen and (max-width: 1100px) {
+    .fb {
+        &__page {
+            padding: vw(0 30px 80px);
+            
+            &__title {
+                display: block;
+                margin: vw(30px 0);
+                padding-bottom: vw(28px);
+                border-bottom: vw(3px) solid #000;                 
+                color: #000000;
+                font-weight: bold;
+                font-size: vw(30px);
+            }
+        }
 
-        &__title {
-            display: block;
-            margin: 80px 0 60px;
-            padding-top: 28px;
-            border-top: 3px solid #000;                 
-            color: #000000;
-            font-size: 20px;
-            font-weight: bold;
+        &__product {
+            * {
+                max-width: 100% !important;
+            }
+            video {
+
+            }
+
+            span {
+                display: block;
+                padding: vw(30px 0);
+                font-size: vw(24px);
+                text-align: center;
+            }
+
+            img {
+                height: auto;
+            }
+        }
+
+        &__qna {
+            width: 100%;
+            
+            &__tip {
+                display: block;
+                padding-bottom: 30px;
+                color: #666;
+                font-size: 13px;
+                text-align: center;
+            }
+
+            &__label {
+                display: block;
+                padding-bottom: vw(20px);
+                color: #1e1e1e;
+                font-size: vw(22px);
+            }
+
+            &__form {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+
+                label {
+                    display: block;
+                    margin-top: vw(30px);
+                }
+                
+                input {
+                    display: block;
+                    width: 100%;
+                    height: vw(80px);
+                    padding-left: vw(30px);
+                    border: 1px solid #ccc;
+                    font-size: vw(24px);
+
+                    &::placeholder {
+                        color: #a0a0a0;
+                        font-size: vw(24px);
+                    }
+                }
+
+                textarea {
+                    width: 100%;
+                    height: vw(500px);
+                    padding: vw(30px 30px);
+                    border: 1px solid #ccc;
+                    font-size: vw(24px);
+
+                    &::placeholder {
+                        color: #a0a0a0;
+                        font-size: vw(24px);
+                    }
+                }
+            }
+
+            &__bottom {
+                display: block;
+                margin-top: vw(50px);
+                text-align: center;
+            }
+
+            &__send {
+                display: inline-block;
+                padding: vw(20px 30px);
+                background: #666;
+                color: #fff;
+                font-weight: 600;
+                font-size: vw(24px);
+            }
+        }
+
+        &__company {
+            &__cont {
+                color: #1e1e1e;
+                margin-top: vw(60px);
+                font-size: vw(24px);
+                line-height: 1.5;
+            }
+
+            &__text {
+                &--bold {
+                    font-size: vw(30px);
+                    font-weight: bold;
+                }
+            }
         }
     }
+}
 
-    &__qna {
-        width: 800px;
-        margin: 0 auto 100px;
-        
-        &__tip {
-            display: block;
-            padding-bottom: 30px;
-            color: #666;
-            font-size: 13px;
-            text-align: center;
-        }
+@media screen and (min-width: 1100px) {
+    .fb {
+        &__page {
 
-        &__label {
-            display: block;
-            padding-bottom: 8px;
-            color: #1e1e1e;
-            font-size: 12px;
-        }
-
-        &__form {
-            display: block;
-            width: 500px;
-            margin: 0 auto;
-
-            label {
+            &__title {
                 display: block;
-                margin-bottom: 20px;
+                margin: 80px 0 60px;
+                padding-top: 28px;
+                border-top: 3px solid #000;                 
+                color: #000000;
+                font-size: 20px;
+                font-weight: bold;
             }
+        }
+
+        &__qna {
+            width: 800px;
+            margin: 0 auto 100px;
             
-            input {
-                width: 100%;
-                height: 40px;
-                padding-left: 15px;
+            &__tip {
+                display: block;
+                padding-bottom: 30px;
+                color: #666;
+                font-size: 13px;
+                text-align: center;
+            }
 
-                &::placeholder {
-                    color: #a0a0a0;
-                    font-size: 13px;
+            &__label {
+                display: block;
+                padding-bottom: 8px;
+                color: #1e1e1e;
+                font-size: 12px;
+            }
+
+            &__form {
+                display: block;
+                width: 500px;
+                margin: 0 auto;
+
+                label {
+                    display: block;
+                    margin-bottom: 20px;
+                }
+                
+                input {
+                    width: 100%;
+                    height: 40px;
+                    padding-left: 15px;
+
+                    &::placeholder {
+                        color: #a0a0a0;
+                        font-size: 13px;
+                    }
+                }
+
+                textarea {
+                    width: 100%;
+                    height: 300px;
+                    padding: 20px 15px;
+
+                    &::placeholder {
+                        color: #a0a0a0;
+                        font-size: 13px;
+                    }
                 }
             }
 
-            textarea {
-                width: 100%;
-                height: 300px;
-                padding: 20px 15px;
+            &__bottom {
+                display: block;
+                margin-top: 30px;
+                text-align: center;
+            }
 
-                &::placeholder {
-                    color: #a0a0a0;
-                    font-size: 13px;
-                }
+            &__send {
+                display: inline-block;
+                padding: 10px 20px;
+                background: #666;
+                color: #fff;
+                font-weight: 600;
+                font-size: 15px;
             }
         }
 
-        &__bottom {
-            display: block;
-            margin-top: 30px;
-            text-align: center;
-        }
+        &__company {
+            width: 900px;
+            margin: 80px auto;
 
-        &__send {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #666;
-            color: #fff;
-            font-weight: 600;
-            font-size: 15px;
+            &__cont {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            &__text {
+                &--bold {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+
+            .notice__title {
+                margin-bottom: 40px;
+            }
+
+            .fb__main__visual {
+                height: 400px;
+                margin-bottom: 60px;
+
+                img {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
         }
     }
 }
