@@ -1,5 +1,135 @@
 @media screen and (max-width: 1100px) {
+  .fb {
+    &__notice {
+        width: 100%;
+        padding: vw(0 30px);
+    }
+  }
+  .fb__notice__answer {
+      padding: vw(30px);
+      background: #f8f8f8;
+      color: #111;
+      font-size: vw(24px);
+      line-height: 1.4;
+  }
+  .fb__notice .notice__row {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: vw(30px 0);
+    font-size: 0;
+  }/* line 127, stdin */
+  .fb__notice .notice__row__title {
+    width: 70%;
+    color: #787878;
+    line-height: 1.4;
+  }/* line 134, stdin */
+  .fb__notice .notice__row__title .noti {
+    display: inline-block;
+    color: #ff3e2f;
+    border: vw(2px) solid #ff3e2f;
+    margin-right: vw(10px);
+    padding: vw(5px 10px);
+    line-height: normal;
+    vertical-align: middle;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 0;
+  }/* line 147, stdin */
+  .fb__notice .notice__row__title .noti em {
+    display: inline-block;
+    font-size: vw(22px);
+    line-height: 1;
+  }/* line 154, stdin */
 
+  .fb__notice .notice__row__title > div {
+    display: inline-block;
+    font-size: vw(24px);
+    word-break: normal;
+    word-wrap: break-word;
+    vertical-align: middle;
+  }/* line 158, stdin */
+
+  .fb__notice .notice__row__date {
+    width: 30%;
+    color: #666;
+    font-size: vw(22px);
+    text-align: center;
+  }/* line 175, stdin */
+  .fb__notice .notice__row__cont {
+    display: none;
+    padding: vw(30px 20px);
+    background: #f7f7f7;
+    color: #787878;
+    font-size: vw(24px);
+    line-height: 1.4;
+  }/* line 183, stdin */
+  .fb__notice .notice__row__cont.show {
+    display: block;
+  }/* line 190, stdin */
+ 
+  .fb__bbs {
+    display: block;
+  }/* line 214, stdin */
+  .fb__bbs table {
+      width: 100%;
+      margin: 0 auto;
+  }
+  .fb__bbs table col:first-of-type {
+    width: 70%;
+  }
+  .fb__bbs__table tr:first-child th, .fb__bbs__table tr:first-child td {
+    border-top: 0;
+  }/* line 219, stdin */
+  .fb__bbs__table th, .fb__bbs__table td {
+    color: #787878;
+    font-size: vw(24px);
+    vertical-align: middle;
+  }/* line 225, stdin */
+  .fb__bbs__table th {
+    height: vw(42px);
+    color: #000000;
+    font-size: vw(24px);
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    text-align: left;
+  }/* line 233, stdin */
+  .fb__bbs__table th.date {
+    text-align: center;
+  }/* line 237, stdin */
+  .fb__bbs__table td {
+    /* height: 62px; */
+    border-top: 1px solid #ddd;
+    color: #666;
+  }/* line 242, stdin */
+  
+  .fb__bbs__table td:last-of-type {
+  border-bottom: 1px solid #ddd;}
+  .fb__bbs__table td a {
+    display: block;
+  }/* line 247, stdin */
+  .fb__bbs__table--loading {
+    text-align: center;
+  }/* line 252, stdin */
+  .fb__bbs__noSearch {
+    height: 385px;
+    line-height: 385px;
+    text-align: center;
+  }/* line 257, stdin */
+  .fb__bbs__noSearch p {
+    margin-bottom: 38px;
+    color: #000;
+    font-size: 24px;
+  }/* line 265, stdin */
+  .fb__bbs__noSearch a {
+    display: inline-block;
+    width: 151px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+  }
 }
 @media screen and (min-width: 1100px) {
     .fb__notice {

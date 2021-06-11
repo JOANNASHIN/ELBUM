@@ -13,14 +13,26 @@
             }
             
             &__visual {
+                overflow: hidden;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 position: relative;
                 height: vw(560px);
-                background: url("../images/main/background.jpg") no-repeat 0 center / 100% auto;
-    
+                // background: url("../images/main/background.jpg") no-repeat 0 center / 100% auto;
+                
                 @include dim(0.2);
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: auto;
+                    margin: auto;
+                }
     
                 .visual {
                     &__text {
@@ -115,6 +127,7 @@
     
             &__menu {
                 padding-top: vw(100px);
+                
                 .menu {
                     &__wrapper {
                         display: flex;
@@ -126,7 +139,7 @@
                         display: flex;
                         position: relative;
                         flex: 0 0 50%;
-                        background: url("../images/main/house1.jpg") no-repeat center center / auto 100%;
+                        background: url("../images/main/house.jpg") no-repeat center center / auto 100%;
                         border: 1px solid #fff;
                         @include dim(0.4);
     
