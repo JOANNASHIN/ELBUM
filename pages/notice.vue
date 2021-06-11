@@ -1,89 +1,75 @@
 <template>
-<main class="fb__notice fb__main">
-   <h2 class="fb__title--hidden">공지사항</h2>
+    <main class="fb__notice">
+    <h2 class="fb__page__title">공지사항</h2>
 
-   <section class="fb__main__visual">
-      <h3 class="fb__title--hidden">상단 대표이미지</h3>
-      <figure class="visual__img">
-        <img src="~/assets/images/main/house1.jpg">
-      </figure>
-   </section>
-
-   <section class="notice__search">
-      <header class="notice__header">
-         <h4 class="notice__title">
-            공지사항
-         </h4>
-      </header>
-   </section>
-   <section class="fb__bbs">
-        
-      <table class="table-default fb__bbs__table">
-         <colgroup>
-            <col width="840">
-            <col width="*">
-         </colgroup>
-         <thead>
-            <tr>
-               <th>제목</th>
-               <th class="date"> 작성일자</th>
-            </tr>
-         </thead>
-         <tbody>
-            <tr>
-               <td colspan="2">
-                    <details>
-                        <summary>
-                                <div class="notice__row">
-                                    <div class="notice__row__title">
-                                    <div>
-                                        <mark class="noti"><em>공지</em></mark> <span>신제품 출시 안내</span>
+    <section class="fb__bbs">
+        <table class="table-default fb__bbs__table">
+            <colgroup>
+                <col width="840">
+                <col width="*">
+            </colgroup>
+            <thead>
+                <tr>
+                <th>제목</th>
+                <th class="date"> 작성일자</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td colspan="2">
+                        <details>
+                            <summary>
+                                    <div class="notice__row">
+                                        <div class="notice__row__title">
+                                        <div>
+                                            <mark class="noti"><em>공지</em></mark> <span>신제품 출시 안내</span>
+                                        </div>
+                                        </div>
+                                        <div class="notice__row__date"><span>2021.06.01</span></div>
                                     </div>
+                                    <div class="notice__row__cont">
+                                        <p></p>
                                     </div>
-                                    <div class="notice__row__date"><span>2021.06.01</span></div>
-                                </div>
-                                <div class="notice__row__cont">
-                                    <p></p>
-                                </div>
-                        </summary>
-                        <div class="fb__notice__answer">
-                            신제품이 출시되었습니다.
-                        </div>
-                    </details>
-               </td>
-            </tr>
-         </tbody>
-      </table>
-   </section>
-   <section data-v-3913ab82="" class="pagination__wrapper pagination__wrapper__type--3" style="display: none;">
-      <div data-v-3913ab82="" class="pagination">
-         <div data-v-3913ab82="" class="pagination__box">
-            <button data-v-3913ab82="" data-test="92" disabled="disabled" class="pagination__btn__allLeft disabled">
-            처음다음페이지
-            </button> <button data-v-3913ab82="" disabled="disabled" class="pagination__btn__left disabled">
-            이전페이지
-            </button> 
-            <ul data-v-3913ab82="" class="pagination__number">
-               <li data-v-3913ab82="" class="pagination__list"><span data-v-3913ab82="" class="fb__font__n"><b data-v-3913ab82="">1</b></span></li>
-               <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">2</button></li>
-               <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">3</button></li>
-               <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">4</button></li>
-               <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">5</button></li>
-               <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">6</button></li>
-               <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">7</button></li>
-               <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">8</button></li>
-               <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">9</button></li>
-               <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">10</button></li>
-            </ul>
-            <button data-v-3913ab82="" class="pagination__btn__right">
-            다음페이지
-            </button> <button data-v-3913ab82="" disabled="disabled" class="pagination__btn__allRight disabled">
-            끝다음페이지 
-            </button>
-         </div>
-      </div>
-   </section>
-</main>
+                            </summary>
+                            <div class="fb__notice__answer">
+                                신제품이 출시되었습니다.
+                            </div>
+                        </details>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section data-v-3913ab82="" class="pagination__wrapper pagination__wrapper__type--3" style="display: none;">
+        <div data-v-3913ab82="" class="pagination">
+            <div data-v-3913ab82="" class="pagination__box">
+                <button data-v-3913ab82="" data-test="92" disabled="disabled" class="pagination__btn__allLeft disabled">
+                처음다음페이지
+                </button> <button data-v-3913ab82="" disabled="disabled" class="pagination__btn__left disabled">
+                이전페이지
+                </button> 
+                <ul data-v-3913ab82="" class="pagination__number">
+                <li data-v-3913ab82="" class="pagination__list"><span data-v-3913ab82="" class="fb__font__n"><b data-v-3913ab82="">1</b></span></li>
+                <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">2</button></li>
+                <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">3</button></li>
+                <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">4</button></li>
+                <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">5</button></li>
+                <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">6</button></li>
+                <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">7</button></li>
+                <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">8</button></li>
+                <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">9</button></li>
+                <li data-v-3913ab82="" class="pagination__list"><button data-v-3913ab82="" class="fb__font__n">10</button></li>
+                </ul>
+                <button data-v-3913ab82="" class="pagination__btn__right">
+                다음페이지
+                </button> <button data-v-3913ab82="" disabled="disabled" class="pagination__btn__allRight disabled">
+                끝다음페이지 
+                </button>
+            </div>
+        </div>
+    </section>
+    </main>
 </template>
 
 <script>

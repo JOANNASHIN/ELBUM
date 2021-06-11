@@ -54,7 +54,7 @@
                     </a>
                 </li>
                 <li class="menu__box">
-                    <a class="menu__link" href="https://smartstore.naver.com/eblaze" target="_blank">
+                    <a class="menu__link" href="/product" target="_blank">
                         <span class="menu__name">제품안내</span>
                     </a>
                 </li>

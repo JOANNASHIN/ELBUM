@@ -2,7 +2,9 @@
 ### Node template
 # Logs
 /logs
+*.xlsx
 *.log
+*.cache
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

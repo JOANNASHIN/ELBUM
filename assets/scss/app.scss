@@ -4,6 +4,8 @@
 @import "./divide/common.scss";
 @import "./divide/layout.scss";
 
+$pcolor: #ff3e2f;
+
 %clear {
     &:after {
         display: block;

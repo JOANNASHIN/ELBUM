@@ -6,22 +6,22 @@
             <!-- <span class="fb__qna__tip">이메일로 문의 / 제안을 보내주세요 !</span> -->
 
             <label>
-                <span class="fb__qna__label">연락 받으실 이메일 *</span>
+                <span class="fb__qna__label">연락 받으실 이메일 <em>*</em></span>
                 <input type="text" placeholder="연락을 받으실 이메일을 입력하세요." maxlength="30" v-model="content.reply_to">
             </label> 
 
             <label>
-                <span class="fb__qna__label">이름</span>
+                <span class="fb__qna__label">이름 <em>*</em></span>
                 <input type="text" placeholder="이름을 입력하세요." maxlength="30" v-model="content.name">
             </label> 
 
             <label>
-                <span class="fb__qna__label">제목 *</span>
+                <span class="fb__qna__label">제목 <em>*</em></span>
                 <input type="text" placeholder="제목을 입력하세요." maxlength="30" v-model="content.title">
             </label> 
 
             <label>
-                <span class="fb__qna__label">내용 *</span>
+                <span class="fb__qna__label">내용 <em>*</em></span>
                 <textarea type="text" placeholder="내용을 입력하세요." maxlength="100" v-model="content.message"></textarea>
             </label> 
 
@@ -54,6 +54,7 @@ export default {
     methods: {
         sendEmail() {
             if ( !this.content.reply_to 
+                 || !this.content.name 
                  || !this.content.title 
                  || !this.content.message 
             ) {
@@ -89,44 +90,3 @@ export default {
     }
 }
 </script>
-
-<style lang="scss">
-    .fb {
-        .fb__main__visual {
-            margin-bottom: 100px;
-        }
-    }
-
-    .fb {
-        &__company {
-            width: 900px;
-            margin: 80px auto;
-
-            &__cont {
-                font-size: 16px;
-                line-height: 1.5;
-            }
-
-            &__text {
-                &--bold {
-                    font-size: 20px;
-                    font-weight: bold;
-                }
-            }
-
-            .notice__title {
-                margin-bottom: 40px;
-            }
-
-            .fb__main__visual {
-                height: 400px;
-                margin-bottom: 60px;
-
-                img {
-                    width: 400px;
-                    height: 400px;
-                }
-            }
-        }
-    }
-</style>
