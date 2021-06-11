@@ -13,7 +13,7 @@
     }
 
     &__qna {
-        width: 800px;
+        width: 900px;
         margin: 0 auto 100px;
         
         &__tip {
@@ -28,12 +28,17 @@
             display: block;
             padding-bottom: 8px;
             color: #1e1e1e;
+            font-weight: bold;
             font-size: 12px;
+
+            em {
+                color: $pcolor;
+            }
         }
 
         &__form {
             display: block;
-            width: 500px;
+            width: 600px;
             margin: 0 auto;
 
             label {
