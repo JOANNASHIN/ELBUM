@@ -42,6 +42,35 @@
                 // }
             }
         }
+
+        &__nav {
+            border-bottom: 1px solid #ddd;
+
+            &__list {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                font-size: 0;
+                text-align: center;
+            }
+
+            &__menu {
+                width: 100%;
+                // display: inline-block;
+                padding: vw(20px 0);
+                font-weight: 600;
+                font-size: vw(22px);
+
+                &.home {
+                    display: none;
+                }
+            }
+        }
+
+        &__content {
+            min-height: vw(800px);
+            padding-bottom: vw(100px);
+        }
         
         &__footer {
             display: block;
@@ -94,6 +123,24 @@
                 // &.background {
                 //     background: rgba(0, 0, 0, 1);
                 // }
+            }
+        }
+
+        &__nav {
+            display: block;
+            width: 100%;
+            border-top: 1px solid #ddd;
+
+            &__list {
+                font-size: 0;
+                text-align: center;
+            }
+
+            &__menu {
+                display: inline-block;
+                padding: 10px 20px;
+                font-weight: 600;
+                font-size: 13px;
             }
         }
 

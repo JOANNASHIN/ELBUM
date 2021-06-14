@@ -1,17 +1,13 @@
 <template>
-    <section class="fb__company">
-        <section class="notice__search">
-            <header class="notice__header">
-                <h2 class="notice__title">회사소개</h2>
-            </header>
-        </section>
+    <section class="fb__company fb__page">
+        <h2 class="fb__page__title">회사소개</h2>
 
-    <section class="fb__main__visual">
-        <h3 class="fb__title--hidden">상단 대표이미지</h3>
-        <figure>
-            <img src="~/assets/images/main/bg1.jpg">
-        </figure>
-   </section>
+        <section class="fb__main__visual">
+            <h3 class="fb__title--hidden">상단 대표이미지</h3>
+            <figure>
+                <img src="~/assets/images/main/bg1.jpg">
+            </figure>
+    </section>
 
         <div class="fb__company__cont">
             ELBUM 홈페이지를 찾아주셔서 감사드립니다.<br>	
@@ -43,38 +39,3 @@ export default {
 
 }
 </script>
-
-<style lang="Scss">
-    .fb {
-        &__company {
-            width: 900px;
-            margin: 80px auto;
-
-            &__cont {
-                font-size: 16px;
-                line-height: 1.5;
-            }
-
-            &__text {
-                &--bold {
-                    font-size: 20px;
-                    font-weight: bold;
-                }
-            }
-
-            .notice__title {
-                margin-bottom: 40px;
-            }
-
-            .fb__main__visual {
-                height: 400px;
-                margin-bottom: 60px;
-
-                img {
-                    width: 400px;
-                    height: 400px;
-                }
-            }
-        }
-    }
-</style>

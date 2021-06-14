@@ -1,5 +1,5 @@
 <template>
-    <main class="fb__product">
+    <main class="fb__product fb__page">
         <h2 class="fb__page__title">제품안내</h2>
 
         <div class="fb__product__wrapper">
@@ -138,27 +138,3 @@ export default {
 
 }
 </script>
-
-<style scoped lang="scss">
-    .fb {
-        &__product {
-            width: 900px;
-            margin: 0 auto;
-
-            &__wrapper {
-                text-align: center;
-            }
-
-            span {
-                display: block;
-                padding: 30px 0;
-                font-size: 14px;
-            }
-
-            img {
-                max-width: 600px;
-                height: auto;
-            }
-        }
-    }
-</style>

@@ -1,5 +1,5 @@
 <template>
-    <main class="fb__notice">
+    <main class="fb__notice fb__page">
     <h2 class="fb__page__title">공지사항</h2>
 
     <section class="fb__bbs">

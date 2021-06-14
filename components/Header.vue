@@ -8,7 +8,7 @@
 
         <nav class="fb__nav">
             <ul class="fb__nav__list">
-                <li class="fb__nav__menu">
+                <li class="fb__nav__menu home">
                     <a href="/">홈</a>
                 </li>
                 <li class="fb__nav__menu">
@@ -57,25 +57,3 @@
         }
     }
 </script>
-
-<style lang="scss">
-    .fb {
-        &__nav {
-            display: block;
-            width: 100%;
-            border-top: 1px solid #ddd;
-
-            &__list {
-                font-size: 0;
-                text-align: center;
-            }
-
-            &__menu {
-                display: inline-block;
-                padding: 10px 20px;
-                font-weight: 600;
-                font-size: 13px;
-            }
-        }
-    }
-</style>
