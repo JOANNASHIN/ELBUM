@@ -13,7 +13,14 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, viewport-fit=cover, user-scalable=no' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Elbum' },
+      { hid: 'keywords', name: 'keywords', content: 'products, elbum, ELBUM, Elbum, 이엘비유엠' },
+      { name: 'naver-site-verification', content: 'f56bb5b6f28814787a8801624ef495b4b570c0a4' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: 'elbum' },
+      { property: 'og:description', content: 'elbum' },
+      { property: 'og:image', content: 'https://elbum-e2586.web.app/favicon96x96.png' },
+      { property: 'og:url', content: 'https://elbum-e2586.web.app/' },
     ],
     
     link: [
