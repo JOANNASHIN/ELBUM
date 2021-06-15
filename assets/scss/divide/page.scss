@@ -19,15 +19,41 @@
                 max-width: 100% !important;
             }
 
-            span {
-                display: block;
-                padding: vw(30px 0);
-                font-size: vw(24px);
-                text-align: center;
+            &__wrapper {
+                span {
+                    display: block;
+                    padding: vw(30px 0);
+                    font-size: vw(24px);
+                    text-align: center;
+                }
+    
+                img {
+                    height: auto;
+                }
             }
 
-            img {
-                height: auto;
+
+            &__tab {
+                display: block;
+                margin: vw(0 auto 50px);
+                text-align: center;
+                font-size: 0;
+            }
+
+            &__menu {
+                display: inline-block;
+                margin: vw(0 5px);
+                padding: vw(10px 20px);
+                border: vw(2px) solid black;
+                font-weight: 600;
+                font-size: vw(22px);
+                line-height: vw(30px); 
+                cursor: pointer;
+
+                &.active {
+                    background: #000;
+                    color: #fff;
+                }
             }
         }
 
@@ -239,20 +265,44 @@
             width: 900px;
             margin: 0 auto;
 
+            &__tab {
+                display: block;
+                margin: 0 auto 50px;
+                text-align: center;
+                font-size: 0;
+            }
+
+            &__menu {
+                display: inline-block;
+                width: 100px;
+                margin: 0 5px;
+                border: 2px solid black;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 30px; 
+                cursor: pointer;
+
+                &.active {
+                    background: #000;
+                    color: #fff;
+                }
+            }
+
             &__wrapper {
                 text-align: center;
+
+                span {
+                    display: block;
+                    padding: 30px 0;
+                    font-size: 14px;
+                }
+    
+                img {
+                    max-width: 600px;
+                    height: auto;
+                }
             }
 
-            span {
-                display: block;
-                padding: 30px 0;
-                font-size: 14px;
-            }
-
-            img {
-                max-width: 600px;
-                height: auto;
-            }
         }
     }
 }
